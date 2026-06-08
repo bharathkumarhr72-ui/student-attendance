@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance System</title>
+</head>
+
+<body style="font-family:Arial; background:linear-gradient(to right,#74ebd5,#ACB6E5); text-align:center;">
+
+<h1 style="color:white;">🎓 Student Attendance</h1>
+
+<div style="background:white; width:300px; margin:auto; padding:20px; border-radius:10px;">
+
+    <form action="/mark" method="POST">
+        <input type="text" name="reg_no" placeholder="Enter Reg No" required
+               style="padding:10px; width:90%;"><br><br>
+
+        <button type="submit"
+                style="padding:10px; width:100%; background:green; color:white; border:none;">
+            Mark Attendance
+        </button>
+    </form>
+
+    <br>
+
+    <a href="/login">
+        <button style="padding:10px; width:100%; background:blue; color:white; border:none;">
+            Department Login
+        </button>
+    </a>
+
+</div>
+
+</body>
+</html>

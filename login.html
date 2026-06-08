@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Department Login</title>
+</head>
+
+<body style="font-family:Arial; background:linear-gradient(to right,#ff9966,#ff5e62); text-align:center;">
+
+<h1 style="color:white;">🏢 Department Login</h1>
+
+<div style="background:white; width:300px; margin:auto; padding:20px; border-radius:10px;">
+
+    <form action="/check" method="POST">
+
+        <input type="text" name="username" placeholder="Username" required
+               style="padding:10px; width:90%;"><br><br>
+
+        <input type="password" name="password" placeholder="Password" required
+               style="padding:10px; width:90%;"><br><br>
+
+        <select name="semester" required style="padding:10px; width:95%;">
+            <option value="">Select Semester</option>
+            <option value="1">1st SEM</option>
+            <option value="2">2nd SEM</option>
+            <option value="3">3rd SEM</option>
+            <option value="4">4th SEM</option>
+            <option value="5">5th SEM</option>
+            <option value="6">6th SEM</option>
+        </select><br><br>
+
+        <button type="submit"
+                style="padding:10px; width:100%; background:darkred; color:white; border:none;">
+            Login
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

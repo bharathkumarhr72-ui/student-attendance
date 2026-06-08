@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+
+<body style="font-family:Arial; background:#f4f4f4; text-align:center;">
+
+<h1>📊 Semester {{ semester }} Attendance Report</h1>
+
+<table border="1" style="margin:auto; width:90%; background:white;">
+
+<tr style="background:blue; color:white;">
+    <th>ID</th>
+    <th>Name</th>
+    <th>Semester</th>
+    <th>Reg No</th>
+    <th>Date</th>
+    <th>Time</th>
+    <th>Status</th>
+</tr>
+
+{% for row in data %}
+<tr>
+    <td>{{ row[0] }}</td>
+    <td>{{ row[1] }}</td>
+    <td>{{ row[2] }}</td>
+    <td>{{ row[3] }}</td>
+    <td>{{ row[4] }}</td>
+    <td>{{ row[5] }}</td>
+    <td style="color:green;">{{ row[6] }}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+</body>
+</html>
